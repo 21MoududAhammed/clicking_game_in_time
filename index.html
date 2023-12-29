@@ -3,14 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Clicking Game</title>
+    <style>
+        .heading{
+            text-align: center;
+            font-size: 3rem;
+            margin: 0px;
+            
+        }
+        .game-result{
+            text-align: center;
+            margin: 10px;
+        }
+        #score{
+            font-size: 7rem;
+            margin: 0;
+            color: white;
+        }
+        .btn{
+            padding: 10px 30px;
+            border: none;
+            font-weight: bold;
+            border-radius: 10px;
+          
+        }
+        .box{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 300px;
+            height: 300px;
+            border: 2px solid;
+            background-color: rgb(80, 83, 83);
+            margin-left: auto;
+            margin-right: auto;
+        }
+       
+    </style>
 </head>
 <body>
-    <header>Clicking Game</header>
+    <header>
+        <h1 class="heading">Clicking Game</h1>
+        <h2 class="game-result">Result: <span id="result"></span></h2>
+    </header>
 
-    <section>
-
-    </section>
+    <main>
+        <section class="box">
+            <div>
+                <h1 id="score">0</h1>
+            </div>
+            <div>
+                <button class="btn" id="btn-start">Start</button>
+                <button type="button" class="btn" id="btn-click" disabled>Click</button>
+            </div>
+            
+        </section>
+    </main>
     <script src="style.js"></script>
 </body>
 </html>
